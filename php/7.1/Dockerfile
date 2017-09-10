@@ -13,6 +13,7 @@ RUN apk add --no-cache --virtual .build-deps \
         sqlite-dev \
     && apk add --no-cache \
         curl \
+        git \
         imagemagick \
         libmcrypt \
         mysql-client \
