@@ -1,0 +1,8 @@
+sudo: required
+
+services:
+  - docker
+
+script:
+  - docker build -t test/php:7.1 php/7.1/
+  - docker build -t test/nginx:1.13 nginx/1.13/
