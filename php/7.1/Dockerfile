@@ -29,6 +29,7 @@ RUN apk add --no-cache --virtual .build-deps \
         pdo_mysql \
         pdo_pgsql \
         pdo_sqlite \
+        pcntl \
         tokenizer \
         xml \
         zip \
