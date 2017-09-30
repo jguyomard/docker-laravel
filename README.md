@@ -1,6 +1,7 @@
 # Docker Images for Laravel development
 [![Docker Build Status](https://img.shields.io/docker/build/jguyomard/laravel-php.svg?style=flat-square)](https://hub.docker.com/r/jguyomard/laravel-php/)
 [![Docker Build Status](https://img.shields.io/docker/build/jguyomard/laravel-nginx.svg?style=flat-square)](https://hub.docker.com/r/jguyomard/laravel-nginx/)
+[![Docker Build Status](https://img.shields.io/docker/build/jguyomard/laravel-capistrano.svg?style=flat-square)](https://hub.docker.com/r/jguyomard/laravel-capistrano/)
 
 This repository provides you a development environment without requiring you to install PHP, a web server, and any other server software on your local machine. For this, it requires Docker and Docker Compose.
 
@@ -40,12 +41,12 @@ You can comment or uncomment some services according to your project.
 
 ## Other tools
 
-This repository also comes with a caspistrano docker image: `jguyomard/laravel-capistrano:3.9`.
+This repository also comes with a caspistrano docker image: [`jguyomard/laravel-capistrano:3.9`](https://hub.docker.com/r/jguyomard/laravel-capistrano/).
 
 For ease of use, you can create a bash alias:
 
 ```
-alias cap='docker run --rm --user cap -v "$PWD":/src -v "$(dirname $SSH_AUTH_SOCK)":"$(dirname $SSH_AUTH_SOCK)" -e SSH_AUTH_SOCK="${SSH_AUTH_SOCK}" jguyomard/laravel-capistrano cap'
+alias cap='docker run --rm --user cap -v "$PWD":/src -v "$(dirname $SSH_AUTH_SOCK)":"$(dirname $SSH_AUTH_SOCK)" -e SSH_AUTH_SOCK="${SSH_AUTH_SOCK}" jguyomard/laravel-capistrano:3.9 cap'
 ```
 
 
