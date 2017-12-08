@@ -31,7 +31,7 @@ docker-compose exec php $yourCommandHere
 These docker images are configured in `docker-compose.yml` file. 
 You can comment or uncomment some services according to your project.
 
-* [`jguyomard/laravel-php:7.1`](https://hub.docker.com/r/jguyomard/laravel-php/) (this docker image extends `php:7.1-fpm-alpine` to add some PHP extensions) ;
+* [`jguyomard/laravel-php:7.2`](https://hub.docker.com/r/jguyomard/laravel-php/) (this docker image extends `php:7.2-fpm-alpine` to add some PHP extensions) ;
 * [`jguyomard/laravel-nginx:1.13`](https://hub.docker.com/r/jguyomard/laravel-nginx/) (this docker image extends `nginx:1.13-alpine` to add Laravel vhost) ;
 * `mysql:5.7` ;
 * `postgres:9.6-alpine` ;
