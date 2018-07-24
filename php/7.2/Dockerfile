@@ -16,6 +16,9 @@ RUN apk add --no-cache --virtual .build-deps \
         imagemagick \
         mysql-client \
         postgresql-libs \
+        libintl \
+        icu \
+        icu-dev \
     && pecl install imagick \
     && docker-php-ext-enable imagick \
     && docker-php-ext-install \
@@ -30,6 +33,7 @@ RUN apk add --no-cache --virtual .build-deps \
         tokenizer \
         xml \
         zip \
+        intl \
     && curl -s https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin/ --filename=composer \
     && apk del -f .build-deps
 
