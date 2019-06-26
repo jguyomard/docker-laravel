@@ -2,7 +2,7 @@ version: '2'
 services:
 
   php:
-    image: jguyomard/laravel-php:7.2
+    image: jguyomard/laravel-php:7.3
     volumes:
       - ./:/var/www/
       - $HOME/.composer/:$HOME/.composer/
